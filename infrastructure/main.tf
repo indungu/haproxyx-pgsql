@@ -30,7 +30,7 @@ resource "google_compute_address" "master_db_internal_address" {
   name         = "master-db-private-ip-indungu"
   subnetwork   = "${data.google_compute_subnetwork.default_subnetwork.self_link}"
   address_type = "INTERNAL"
-  address      = "10.132.0.45"
+  address      = "10.132.0.46"
   region       = "${var.region}"
 }
 
@@ -39,7 +39,7 @@ resource "google_compute_address" "slave_db_01_internal_address" {
   name         = "slave-db-01-private-ip-indungu"
   subnetwork   = "${data.google_compute_subnetwork.default_subnetwork.self_link}"
   address_type = "INTERNAL"
-  address      = "10.132.0.46"
+  address      = "10.132.0.47"
   region       = "${var.region}"
 }
 
@@ -48,7 +48,7 @@ resource "google_compute_address" "slave_db_02_internal_address" {
   name         = "slave-db-02-private-ip-indungu"
   subnetwork   = "${data.google_compute_subnetwork.default_subnetwork.self_link}"
   address_type = "INTERNAL"
-  address      = "10.132.0.47"
+  address      = "10.132.0.48"
   region       = "${var.region}"
 }
 
