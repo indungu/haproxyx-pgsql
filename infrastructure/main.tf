@@ -81,7 +81,7 @@ resource "google_compute_instance" "slave-db-01" {
 
   boot_disk {
     initialize_params {
-      image = "slaves-db-01"
+      image = "slave-db-01"
     }
   }
 
@@ -102,7 +102,7 @@ resource "google_compute_instance" "slave-db-02" {
 
   boot_disk {
     initialize_params {
-      image = "slaves-db-02"
+      image = "slave-db-02"
     }
   }
 
@@ -123,7 +123,7 @@ resource "google_compute_instance" "haproxy-lb" {
 
   boot_disk {
     initialize_params {
-      image = "haproxy-lb-image"
+      image = "haproxy-lb"
     }
   }
 
