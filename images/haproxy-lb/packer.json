@@ -14,7 +14,7 @@
         "ssh_username": "ubuntu",
         "image_description": "haproxy load balancer configured image",
         "image_family": "ubuntu-1604-lts",
-        "image_name": "haproxy-lb-image",
+        "image_name": "haproxy-lb",
         "disk_size": 10,
         "account_file": "{{ user `service_account_json`}}"
       }
